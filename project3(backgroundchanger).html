@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background changer</title>
+    <style>
+        .btn{
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            border: solid black 2px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        #color-switcher{
+            text-align: right;
+        }
+        body{
+            margin: 0px;
+            padding: 10px 20px;
+        }
+        img{
+            height: auto;
+            width: 100%;
+        
+
+        }
+        p{
+          font-size: 18px;
+          text-align: justify;  
+        }
+        h1{
+            text-align: center ;
+            text-decoration: underline;
+        }
+        
+        #white{
+            background: #ffffff;
+            
+        }
+        #aqua{
+            background-color: #00ffff;
+        }
+        #pink{
+            background-color: #ffc2cc;
+        }
+        #blue{
+            background-color: #0000ff;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 class="text">cruel brother</h1>
+     <img src="bullying.jpg" alt="error">
+    <p class="text">
+    Toxic siblings, your brother or sister is never wrong. 
+    If you notice your sibling blames others for their own mistakes or faults, 
+    is constantly deflecting, and lacks the self awareness necessary to take 
+    responsibility for their own actions, Lozano says there are major red flags.
+    Specific toxic sibling relationships can result if parents are unavailable, depressed, 
+    aggressive, narcissistic, controlling, or favour one child over the others. 
+    When the parents do not set boundaries ormanage the siblings' relationship healthily, 
+    these dynamics can become polarised and increasingly detrimental.
+    The Tell-Tale Signs of a Narcissistic Brother. Having a narcissistic brother 
+    is distressing to say the least. He can't stand you and you don't understand why.
+    Having a conversation with him is like pulling teeth, he's either playing the blame 
+    game, or word salad.
+    WHAT TYPE OF BROTHER I WANT ?
+    My brother is very polite by nature and is loved by one and all. He often shares his chocolates,
+    sweets and candies with me. He loves playing snakes and ladders and ludo with me during weekends. 
+    He shares everything with me and is very comfortable discussing his classes, school friends and homework with me.
+
+   </p>
+   <div id="color-switcher">
+       <span class="btn" id="white" onclick="changeBG('#ffffff')"></span>
+       <span class="btn" id="aqua" onclick="changeBG('#00ffff')"></span>
+       <span class="btn" id="blue" onclick="changeBG('#0000ff')"></span>
+       <span class="btn" id="pink" onclick="changeBG('#ffc2cc')"></span>
+   </div>
+   <script>
+     function changeBG(color){
+         document.body.style.backgroundColor=color;
+           let txt = document.getElementsByClassName("text");
+         if(color == "#000000"){
+             for(let elm of txt){
+                 elm.style.color="white";
+
+             }
+         } else{
+            for(let elm of txt){
+                 elm.style.color="black";
+
+             }
+         }
+        }  
+   </script>
+    </body>
+</html> 
